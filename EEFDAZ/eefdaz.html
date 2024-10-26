@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Tipo de Caracteres utilizado e formatação padrão de site-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Otimizando o SO-->
+        <meta name="description" content="Escola de Educação Infantil Dom Antônio Zattera - Promovendo a humanização e a educação.">
+        <meta name="keywords" content="EEIDAZ, Escola, Educação Infantil, Educação, Evangelização">
+        <!--Titulo do Site-->
+        <title>Escola de Ensino Fundamental Dom Antônio Zattera - EEFDAZ</title>
+        <!--Chamando o bootstrap para Responsividade-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Chamano o arquivo CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Incluindo o Slick-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <!-- Incluindo o jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Inclua o JS do Slick -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--Começando a Barra de Navegação pelo Logo-->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="logoimdaz.png" alt="Logotipo do Instituto" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Barra de Navegação-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav nav-item mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../EEIDAZ/eeidaz.html">EEIDAZ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="eefdaz.html">EEFDAZ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../historia/historia.html">História</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../projetos/projetos.html">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../equipe/equipe.html">Equipe</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../doacoes/doacoes.html">Doações</a></li>
+                        </ul>
+                        <!--Barra de Pesquisa-->
+                        <form class="d-flex search-form" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar compact-navbar fixed-top" style="display: none;">
+                <div class="container d-flex justify-content-start align-items-center">
+                    <a href="../index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="logoimdaz.png" alt="Logotipo do Instituto" class="compact-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#compactMenu"
+                        aria-controls="compactMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="compactMenu" class="collapse">
+                    <ul class="navbar-nav flex-column me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../EEIDAZ/eeidaz.html">EEIDAZ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="eefdaz.html">EEFDAZ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../historia/historia.html">História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../projetos/projetos.html">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../equipe/equipe.html">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../doacoes/doacoes.html">Doações</a></li>
+                    </ul>
+                    <!--Barra de Pesquisa dentro do menu compacto-->
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!--Titulo-->
+        <div class="container-title">
+            <div class="title-top">
+                <h1>Escola de Ensino Fundamental Dom Antônio Zattera</h1>
+                <p>Após a criação da Escola de Educação Infantil em 2023, não tinha sentido abandonarmos todo o nosso trabalho, principalmente com os alunos do Pré B, que trilharam conosco um ano de adaptação ao turno integral onde se desenvolveram através de um ensino lúdico e integrado. Com muita dificuldade financeira, buscamos apoiadores, onde maioritariamente a Paróquia Senhor Ressuscitado no bairro Areal topou a missão de  transformar o futuro através da Educação. É com muita alegria que apresentamos um pouco das expectativas para estre primeiro ano.</p>
+            </div>
+        </div>
+        <!-- Início do slick -->
+        <div class="section-title">
+            <h2>Nossas Turmas</h2>
+        </div>
+        <!-- Turmas -->
+        <div class="slider">
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="primeiroano.png" class="slick-imagem" alt="Imagem de diversas crianças levantando a mão, atrás das crianças há uma professora também com as mãos levantadas">
+                    <div class="slick-text">
+                        <h4>Primeiro Ano</h4>
+                        <p>Estamos todos muito empolgados com a chegada da primeira turma do primeiro ano do ensino fundamental na nossa escola Dom Antônio Zattera. A expectativa é grande, principalmente por se tratar de um turno integral, o que oferecerá aos alunos uma jornada mais completa de aprendizado e convivência. Com um corpo docente qualificado e uma infraestrutura moderna, acreditamos que os alunos terão a oportunidade de vivenciar experiências enriquecedoras e de se desenvolverem de forma integral. Estamos ansiosos para recebê-los e acompanhar o crescimento e a evolução de cada um ao longo do ano letivo. As atividades extracurriculares, o suporte psicopedagógico e a alimentação balanceada são alguns dos diferenciais que fazem com que a nossa escola se destaque como um ambiente acolhedor e propício ao desenvolvimento das habilidades e competências dos nossos alunos. Esperamos que essa primeira turma do primeiro ano do ensino fundamental se sinta acolhida e motivada a explorar todo o seu potencial. Estamos confiantes de que será um ano repleto de aprendizado, descobertas e realizações, e estamos ansiosos para fazer parte dessa jornada ao lado dos nossos queridos alunos. Professoras Letícia E Mayra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="segundoano.png" class="slick-imagem" alt="Imagem de diversas crianças com as mãos levantadas, algumas estão sentadas no chão enquanto outras estão em pé atrás">
+                    <div class="slick-text">
+                        <h4>Segundo Ano</h4>
+                        <p>Mais um ano que inicia e com ele, novas expectativas, novos projetos, novos anseios, novos desafios, novos desejos de que tudo ocorrerá dentro do esperado. Fazer parte desse sonho hoje é muito gratificante, ser as primeiras professoras do Ensino Fundamental de turno integral do IMDAZ é uma realização e ao mesmo tempo um grande desafio, cujo propósitos tem tudo para dar certo, mas para isso se faz necessária uma boa pitada de dedicação, companheirismo entre nós professoras e acima de tudo, planejamento. Acreditamos também, que através de uma Educação Cristã, vamos plantar sementes de conhecimentos, cultivar mentes curiosas e uma pequena semente dentro do coração de cada um dos nossos amados alunos. Uma semente que, com o passar dos anos, com certeza se tornará uma grande árvore e nos permitirão colher bons frutos de realização e sucesso. Agradecemos a Deus pela oportunidade e pelo privilégio de fazer parte dessa escola!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="terceiroano.png" class="slick-imagem" alt="Imagem de diversas crianças levantando uma ou duas das mãos e uma adulta entre as crianças com um dos braços levantados">
+                    <div class="slick-text">
+                        <h4>Terceiro Ano</h4>
+                        <p>Vamos construir juntos o melhor ano letivo! Estou entusiasmada com a escola que estamos construindo. O turno integral irá propiciar assistir efetivamente os alunos que possuem alguma dificuldade de aprendizagem, oferecendo aulas de reforço dinâmicas e contextualizadas, fazendo com que o ensino faça sentido para os educandos. Penso também na importância de um ensino educacional mais humanizado, que reconheça as individualidades de cada aluno, promovendo um ambiente de aprendizagem inclusivo e empático, preparando- os para enfrentar os desafios da vida de forma mais resiliente e colaborativa. Seremos a 1ª° turma de 3ª série da escola de Ensino Fundamental Dom Antônio Zattera, e estou certa que viemos para fazer história!! Professora Tainã Pinto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="quartoano.png" class="slick-imagem" alt="Imagem de sete crianças com uma das mãos levantadas e atrás dois adultos com uma das mãos levantadas">
+                    <div class="slick-text">
+                            <h4>Quarto Ano</h4>
+                            <p>Iniciamos em 2024, o ano em que o IMDAZ completa seus 100 anos de existência. A professora Larissa Coelho terá a importante missão de acompanhar a primeira turma de 4º ano da Escola de Ensino Fundamental Dom Antônio Zattera. Larissa comenta: “Os alunos do ensino fundamental foram os mais afetados no processo de aprendizagem durante a pandemia pelo coronavírus e nós, professores, temos uma grande missão em transformar nossos alunos de quarto ano em indivíduos letrados, que respondem adequadamente às demandas sociais da leitura e da escrita. Incentivaremos os alunos a refletirem a cerca  dos conhecimentos já existentes  e a busca por  novos saberes, através de atividades colaborativas que promovam trabalho em grupo, debate, raciocínio, exposição verbal e trabalhos individuais. Buscaremos oportunizar a autonomia, reflexão e diálogo dos alunos, além de despertar curiosidade e interesse pelos conteúdos programáticos através de atividades diferenciadas e pensadas na necessidade de cada um.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slick Professores-->
+        <div class="section-title">
+            <h2>Conheça Nossos Professores</h2>
+        </div>
+        <!-- Turmas -->
+        <div class="slider">
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="jonas.png" class="slick-imagem" alt="Imagem de um homem em pé segurando um violão">
+                    <div class="slick-text">
+                        <h4>Jonas Almeida - Professor de Música</h4>
+                        <p>Como profissional da educação, minha missão é desvendar e mostrar ao aluno o grande potencial que ele tem. Minha expectativa para esse ano de 2024 como professor, é usar a música como ferramenta para o desenvolvimento social e educativo dos alunos. Que eles possam ver na música uma chave para obter autoconhecimento, disciplina e qualidade de vida..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="carina.png" class="slick-imagem" alt="Imagem de uma mulher sentada de frente para o fotógrafo, logo a frente uma criança sentada de costas virada olhando para o fotógrafo">
+                    <div class="slick-text">
+                        <h4>Carina Sinnott - Professora de Ciências</h4>
+                        <p>Na disciplina de Ciências, buscamos formar cidadãos conscientes do ambiente em que vivem, tanto no que diz respeito aos fenômenos naturais, quanto às relações sociais e tecnológicas. Em busca do letramento científico, procuramos aguçar a curiosidade e criticidade dos estudantes, fazendo-os refletir no "porquê" e no "como" das coisas acontecerem e na consciência de integração e pertencimento do espaço em que estão inseridos. Temos o privilégio de contar com um laboratório de Ciências, um museu de ciências naturais e uma horta. Estes espaços contribuem para diferentes abordagens pedagógicas e metodológicas, diversificando e contemplando as diferentes formas de ensino-aprendizagem dos estudantes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="marilia.png" class="slick-imagem" alt="Imagem de uma mulher que esta agachada a frente de uma mesa e sorri para a fotografia">
+                    <div class="slick-text">
+                        <h4>Marília Sinãni - Professora de Artes</h4>
+                        <p>O mundo está passando por mudanças significativas e as crianças já nascem imersas em um contexto cultural marcado pelos impactos do uso das tecnologias digitais, os efeitos da pandemia do Covid-19 na aprendizagem e as problemáticas sociais características de nosso tempo. Compreendendo a importância da arte na formação humana, temos como objetivo trabalhar para que os nossos alunos do ensino infantil e fundamental desenvolvam a criatividade, a curiosidade, a fruição, a apreciação, a expressão e a reflexão crítica. Para isso, buscamos a realização de atividades individuais e coletivas voltadas à alfabetização visual, ao processo de socialização e ao exercício da leitura de mundo, de modo que os alunos sejam formados para serem cidadãos ativos, letrados visualmente, conhecedores das produções artísticas e culturais da humanidade, criadores e autônomos na sociedade. Assim, estamos comprometidos com a escuta dialógica e com o despertar da curiosidade dos alunos através de processos criativos, respeitando a subjetividade de cada um e a realidade social a qual eles pertencem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="paola.png" class="slick-imagem" alt="Imagem de uma mulher agachada ao lado de uma caixa de som">
+                    <div class="slick-text">
+                            <h4>Paola Cleff - Professora de Dança</h4>
+                            <p>O movimento faz parte da vida e o seu estímulo das mais diferentes formas, causam um efeito de extrema importância para o desenvolvimento das crianças e adolescentes! A Dança promove um desenvolvimento completo, apresentando benefícios físicos, emocionais, mentais, sociais. Entre os fatores principais trabalhamos coordenação , motricidade, desenvoltura corporal, postura, expressão corporal, disciplina, estímulos aeróbicos que promovam a liberação de endorfina, trazendo sensação de bem estar aos alunos, trabalhamos também  a memorização, concentração, espacialidade , imaginação, interpretação, consciência corporal, socialização, autoestima, autoconfiança, entre muitos outros. Minha intenção enquanto professora de dança é proporcionar vivências que colaborem para a formação de crianças e adolescentes saudáveis como um todo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="valquiria.png" class="slick-imagem" alt="Imagem de uma mulher que aparece de frente para a câmera">
+                    <div class="slick-text">
+                        <h4>Valquíria Xavier - Professora de Ed. Física</h4>
+                        <p>Como professora de educação física ao longo do ano letivo de dois mil e vinte quatro, tenho como objetivo criar condições onde os educandos possam se tornarem independentes, participativos e com autonomia de pensamento. E incentivadora do desenvolvimento de habilidades conhecimentos e competências nas práticas das atividades das aulas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Logo EEFDAZ-->
+        <div class="logo-eefdaz">
+            <div>
+            <img src="logoescola.png" class="partner-logo" alt="Logo da escola">
+            </div>
+        </div>
+        <div class="contato">
+                <p><b>Contato:</b> eefundamentaldomantoniozattera@gmail.com</p>
+        </div>
+        <!--Rodapé-->
+        <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <!--Coluna Contatos--> 
+                <div class="col-md-3">
+                    <h5>Instituto de Menores Dom Antônio Zattera</h5>
+                    <p><b>Email:</b> institutodemenores@gmail.com</p>
+                    <p><b>Telefone:</b> (53) 3228 5505</p>
+                    <p><b>WhatsApp:</b> +5553999030409</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6765835368847!2d-52.305627725158715!3d-31.752027674108707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b45b607428c9%3A0xbe78d18a4a36d8c!2sInstituto%20de%20Menores%20Dom%20Ant%C3%B4nio%20Zattera!5e0!3m2!1spt-BR!2sbr!4v1727399696293!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--Coluna Sobre Nós-->
+                <div class="col-md-3">
+                    <h5>Sobre Nós</h5>
+                    <p>O Instituto de Menores tem como objetivo promover a humanização e evangelização executadas através da educação e a busca da profissionalização, além de promover a oportunidade de convivência sadia e fraterna, através do lazer, esporte e atividades culturais que exercitam a cidadania, bem como apoio as ações do ensino formal, valorização do estudo e do trabalho.</p>
+                </div>
+                <!--Coluna Seções-->
+                <div class="col-md-3">
+                    <h5>Publicações mais populares</h5>
+                    <ul>
+                        <li><a href="#">Postagem 1</a></li>
+                        <li><a href="#">Postagem 2</a></li>
+                    </ul>
+                </div>
+                <!--Coluna de TAG's-->
+                <div class="col-md-3">
+                    <h5>Tags</h5>
+                    <ul>
+                        <li><a href="#">Ações Realizadas</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Calendário</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Copyright e Redes Sociais--> 
+            <div class="text-center copyright">
+                <p>&copy; 2024 Instituto de Menores Dom Antônio Zattera. Todos os direitos reservados.<br> 
+                <b>Site Desenvolvido por:</b><i> Anderson Moreira Passos</i></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/institutodemenoresdaz/" class="social-icon"><img src="icones/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/imdaz.1924/" class="social-icon"><img src="icones/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@imdaz158" class="social-icon"><img src="icones/youtube-icon.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    
+        <!--Bootstrap para Responsividade-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            window.onscroll = function () {
+                toggleCompactNavbar();
+            };
+        
+            const compactNavbar = document.querySelector('.compact-navbar');
+            const navbar = document.querySelector('.navbar');
+            const expandMenuButton = document.querySelector('.compact-navbar .navbar-toggler');
+            const compactMenu = document.getElementById('compactMenu');
+        
+            function toggleCompactNavbar() {
+                if (window.scrollY > 50) {
+                    compactNavbar.style.display = 'flex';
+                    navbar.style.display = 'none';
+                } else {
+                    compactNavbar.style.display = 'none';
+                    navbar.style.display = 'flex';
+                }
+            }
+        
+            expandMenuButton.addEventListener('click', function () {
+                compactMenu.classList.toggle('collapse');
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    Infinity: true,
+                    speed: 500,
+                    arrows: true,
+                    dots: true,
+                    responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                }
+              ]
+            });
+        });
+        </script>
+    </body>
+</html>

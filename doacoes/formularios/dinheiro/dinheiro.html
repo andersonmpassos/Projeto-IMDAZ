@@ -1,0 +1,186 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Tipo de Caracteres utilizado e formatação padrão de site-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Otimizando o SO-->
+        <meta name="description" content="Instituto de Menores Dom Antônio Zattera - Promovendo a humanização e a evangelização através de ações educativas e culturais.">
+        <meta name="keywords" content="IMDAZ, Instituto de Menores, Educação, Cultura, Evangelização, Projetos Sociais">
+        <!--Titulo do Site-->
+        <title>Instituto de Menores Dom Antônio Zattera - IMDAZ</title>
+        <!--Chamando o bootstrap para Responsividade-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Chamano o arquivo CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Incluindo o Slick-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <!-- Incluindo o jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Inclua o JS do Slick -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--Começando a Barra de Navegação pelo Logo-->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="logoimdaz.png" alt="Logotipo do Instituto" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Barra de Navegação-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav nav-item mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="../../../index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../../EEIDAZ/eeidaz.html">EEIDAZ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../../EEFDAZ/eefdaz.html">EEFDAZ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../../historia/historia.html">História</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../../projetos/projetos.html">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../../equipe/equipe.html">Equipe</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../doacoes.html">Doações</a></li>
+                        </ul>
+                        <!--Barra de Pesquisa-->
+                        <form class="d-flex search-form" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar compact-navbar fixed-top" style="display: none;">
+                <div class="container d-flex justify-content-start align-items-center">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="logoimdaz.png" alt="Logotipo do Instituto" class="compact-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#compactMenu"
+                        aria-controls="compactMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="compactMenu" class="collapse">
+                    <ul class="navbar-nav flex-column me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../../../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../EEIDAZ/eeidaz.html">EEIDAZ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../EEFDAZ/eefdaz.html">EEFDAZ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../historia/historia.html">História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../projetos/projetos.html">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../equipe/equipe.html">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../doacoes.html">Doações</a></li>
+                    </ul>
+                    <!--Barra de Pesquisa dentro do menu compacto-->
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!--Formulário de Pesquisa-->
+        <?php
+        if(isset($_SESSION['msg']))
+            echo $_SESSION['msg'];
+            unset ($_SESSION['msg']);
+        ?>
+        <div class="container-card">
+            <div class="card-interactive">
+                <div class="image-box">
+                    <img src="#" alt="QR code para doações em pix">
+                </div>
+                <div class="text">
+                    <h2>Doação em Dinheiro</h2>
+                    <p>Para mantermos nossas estruturas nem sempre é uma tarefa facil, as vezes as contas não fecham e necessitamos buscar outras alternativas para mantermos nossas portas abertas, nos ajude doando dinheiro para  manter nossas estruturas.</p>
+                </div>
+            </div>
+        </div>
+        <!--Rodapé-->
+        <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <!--Coluna Contatos--> 
+                <div class="col-md-3">
+                    <h5>Instituto de Menores Dom Antônio Zattera</h5>
+                    <p><b>Email:</b> institutodemenores@gmail.com</p>
+                    <p><b>Telefone:</b> (53) 3228 5505</p>
+                    <p><b>WhatsApp:</b> +5553999030409</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6765835368847!2d-52.305627725158715!3d-31.752027674108707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b45b607428c9%3A0xbe78d18a4a36d8c!2sInstituto%20de%20Menores%20Dom%20Ant%C3%B4nio%20Zattera!5e0!3m2!1spt-BR!2sbr!4v1727399696293!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--Coluna Sobre Nós-->
+                <div class="col-md-3">
+                    <h5>Sobre Nós</h5>
+                    <p>O Instituto de Menores tem como objetivo promover a humanização e evangelização executadas através da educação e a busca da profissionalização, além de promover a oportunidade de convivência sadia e fraterna, através do lazer, esporte e atividades culturais que exercitam a cidadania, bem como apoio as ações do ensino formal, valorização do estudo e do trabalho.</p>
+                </div>
+                <!--Coluna Seções-->
+                <div class="col-md-3">
+                    <h5>Publicações mais populares</h5>
+                    <ul>
+                        <li><a href="#">Postagem 1</a></li>
+                        <li><a href="#">Postagem 2</a></li>
+                    </ul>
+                </div>
+                <!--Coluna de TAG's-->
+                <div class="col-md-3">
+                    <h5>Tags</h5>
+                    <ul>
+                        <li><a href="#">Ações Realizadas</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Calendário</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Copyright e Redes Sociais--> 
+            <div class="text-center copyright">
+                <p>&copy; 2024 Instituto de Menores Dom Antônio Zattera. Todos os direitos reservados.<br> 
+                <b>Site Desenvolvido por:</b><i> Anderson Moreira Passos</i></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/institutodemenoresdaz/" class="social-icon"><img src="icones/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/imdaz.1924/" class="social-icon"><img src="icones/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@imdaz158" class="social-icon"><img src="icones/youtube-icon.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    
+        <!--Bootstrap para Responsividade-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--Conectando o Javascript-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script>
+            window.onscroll = function () {
+                toggleCompactNavbar();
+            };
+
+            const compactNavbar = document.querySelector('.compact-navbar');
+            const navbar = document.querySelector('.navbar');
+            const expandMenuButton = document.querySelector('.compact-navbar .navbar-toggler');
+            const compactMenu = document.getElementById('compactMenu');
+
+            function toggleCompactNavbar() {
+                if (window.scrollY > 50) {
+                    compactNavbar.style.display = 'flex';
+                    navbar.style.display = 'none';
+                } else {
+                    compactNavbar.style.display = 'none';
+                    navbar.style.display = 'flex';
+                }
+            }
+
+            expandMenuButton.addEventListener('click', function () {
+                compactMenu.classList.toggle('colapse');
+            });
+        </script>
+    </body>
+</html>

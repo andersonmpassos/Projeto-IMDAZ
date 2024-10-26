@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Tipo de Caracteres utilizado e formatação padrão de site-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Otimizando o SO-->
+        <meta name="description" content="Escola de Educação Infantil Dom Antônio Zattera - Promovendo a humanização e a educação.">
+        <meta name="keywords" content="EEIDAZ, Escola, Educação Infantil, Educação, Evangelização">
+        <!--Titulo do Site-->
+        <title>Escola de Educação Infantil Dom Antônio Zattera - EEIDAZ</title>
+        <!--Chamando o bootstrap para Responsividade-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Chamano o arquivo CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Incluindo o Slick-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <!-- Incluindo o jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Inclua o JS do Slick -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--Começando a Barra de Navegação pelo Logo-->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="logoimdaz.png" alt="Logotipo do Instituto" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Barra de Navegação-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav nav-item mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="eeidaz.html">EEIDAZ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../EEFDAZ/eefdaz.html">EEFDAZ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../historia/historia.html">História</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../projetos/projetos.html">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../equipe/equipe.html">Equipe</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../doacoes/doacoes.html">Doações</a></li>
+                        </ul>
+                        <!--Barra de Pesquisa-->
+                        <form class="d-flex search-form" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar compact-navbar fixed-top" style="display: none;">
+                <div class="container d-flex justify-content-start align-items-center">
+                    <a href="../index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="logoimdaz.png" alt="Logotipo do Instituto" class="compact-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#compactMenu"
+                        aria-controls="compactMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="compactMenu" class="collapse">
+                    <ul class="navbar-nav flex-column me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="eeidaz.html">EEIDAZ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../EEFDAZ/eefdaz.html">EEFDAZ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../projetos/projetos.html">História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../equipe/equipe.html">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Projetos/projetos.html">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../doacoes/doacoes.html">Doações</a></li>
+                    </ul>
+                    <!--Barra de Pesquisa dentro do menu compacto-->
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!--Titulo-->
+        <div class="container-title">
+            <div class="title-top">
+                <h1>Escola de Educação Infantil Dom Antônio Zattera</h1>
+                <p>Criada em 2023 a Escola de Educação Infantil busca entregar aos alunos uma educação de qualidade, onde não somente as matérias são aprendidas, mas valores como a cooperação, empatia e respeito. Queremos que nossas crianças confiem no seu próprio potencial e se formem jovens com pensamento crítico, consciência social e a certeza que o amor ao próximo pode transformar o mundo!</p>
+            </div>
+        </div>
+        <!-- Início do slick -->
+        <div class="section-title">
+            <h2>Nossas Turmas</h2>
+        </div>
+        <!-- Turmas -->
+        <div class="slider">
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="bercario1.png" class="slick-imagem" alt="Imagem de uma mulher sentada no chão com uma criança no colo, ao lado dela tem outra criança que esta em uma cadeirinha de criança">
+                    <div class="slick-text">
+                        <h4>Berçário 1</h4>
+                        <p>Nós professoras Milena e Natalia estamos felizes em fazer parte do primeiro contato escolar dos nossos alunos. Pois o berçário 1 é a primeira etapa da educação básica e tem como objetivo a promoção do desenvolvimento integral da criança. O ano letivo de 2024 inicia-se e com ele surgirão novos desafios e descobertas. Pretendemos fazer do ambiente escolar um espaço acolhedor, respeitoso e afetuoso. Para que juntos possamos crescer e evoluir a cada dia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="bercario2.png" class="slick-imagem" alt="Imagem de uma mulher em pé com uma criança no colo">
+                    <div class="slick-text">
+                        <h4>Berçário 2</h4>
+                        <p>Nossa meta é que durante o ano de 2024, os alunos do b2 tenham um ambiente seguro e acolhedor para que  assim, os bebês possam se adaptar  ao meio, permitindo-se fazer novas aprendizagens e descobertas que contribuam para o seu pleno desenvolvimento físico, emocional e social. A criança é um ser que precisa de atenção, amor e estímulos para se desenvolver de forma satisfatória. Será um prazer acompanhar  essa turminha este ano! Prof: Maura, Natália,  Bruna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="maternal1.png" class="slick-imagem" alt="Imagem de uma mulher sentada em uma cadeira com uma criança no colo">
+                    <div class="slick-text">
+                        <h4>Maternal 1</h4>
+                        <p>A cada início do ano letivo criamos muitas expectativas, desde de qual vai ser nossa turma até o término do ano, o qual dissemos: "ufa, mais um ano vencido com sucesso". Sabemos que no desenvolvimento do ser humano, a educação infantil ocupa um lugar fundamental, é a fase primordial para a formação intelectual, emocional e social da criança, então, quanta responsabilidade não é mesmo? Como professora do maternal 1 espero continuar fazendo a diferença na vida de cada criança, assim como foi ano passado ver a evolução dos pequenos. Tínhamos crianças que não sabiam pegar o lápis para pintar e ao terminar o ano já sabiam pintar sem borrar o desenho, são coisas que não tem preço, isso foi um simples exemplo. Ouvir dos pais o quanto foi nítido a evolução dos nossos pequenos, é muito gratificante e espero que nesse ano de 2024 eu possa seguir fazendo a diferença com muito carinho e muita responsabilidade, que com certeza não é só as crianças que aprendem , nós aprendemos muito mais... Um abraço carinhoso da prof. Carla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="maternal2.png" class="slick-imagem" alt="Imagem de quatro crianças sentadas a uma mesa uma das crianças está pegando algo de uma bandeija">
+                    <div class="slick-text">
+                            <h4>Maternal 2</h4>
+                            <p>Estamos ansiosas para esse ano de 2024. Almejamos fortalecer laços afetivos e desenvolver habilidades socioeducacionais. Por aqui, terá muita diversão aliada com a construção de conhecimento. Afeto e amor também não irão faltar pois, entendemos que, um ambiente acolhedor é mais propício a render bons frutos. Para este ano, no Maternal 2, planejamos trabalhar de modo que venhamos a desenvolver a coordenação motora e a corporeidade,  proporcionar aos alunos  interação com a literatura e contato com os diferentes gêneros textuais. Estamos entusiasmadas para vivenciarmos um lindo ano com nossas crianças. Professoras Cassandra e Evelin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="pre1.png" class="slick-imagem" alt="Imagem de uma criança sentada em uma cadeira com uma mesa na frente, a criança esta virada para o fotógrafo e faz o sinal de certo levantando somente o polegar esquerdo">
+                    <div class="slick-text">
+                        <h4>Pré 1</h4>
+                        <p>Sejam bem vindos! É de coração aberto e cheio de alegria que vamos iniciar o ano juntos. Aqui na Educação Infantil o professor começa a plantar a sementinha do conhecimento que vamos cultivando dia a dia. Regando essa sementinha com amor, paciência e conhecimento, ela irá germinar criando frutos lá na frente. Será um ano letivo com desafios em busca da aprendizagem de forma lúdica e divertida. Estou animada para vivenciar junto com essa nova turma, um ano repleto de aprendizados. Todos vamos juntos aprender, brincar e fazer amigos. Fico muito feliz em fazer parte e contribuir nessa linda trajetória dos nossos pequenos do Pré A. Professora Beatriz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-item">
+                <div class="slick-info">
+                    <img src="pre2.png" class="slick-imagem" alt="Imagem de duas crianças, uma esta na frente e faz um sinal levantando dois dedos e a outra que está atrás estava em movimento na hora">
+                    <div class="slick-text">
+                     <h4>Pré 2</h4>
+                    <p>Me chamo Marcela, sou pedagoga e a professora titular do Pré 2. Permanecerei com a mesma turma em que estive em sala em 2023. É uma honra e um prazer fazer parte como intermediadora do processo de aprendizagem desta turma que eu tanto amo. No ano passado conseguimos vencer o desafio de vivenciar a inclusão de crianças com deficiência de forma integral, as crianças alcançaram os marcos do desenvolvimento nos  três domínios de aprendizagem - cognitivo, psicossocial e motor. No próximo ano esta turma avançará para o ensino fundamental e a minha busca será conseguir novamente a evolução destes alunos através da afetividade por meio da ludicidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Parceria + Contato-->
+        <div class="partner-smed">
+            <div>
+            <img src="parceriasmed.png" class="partner-logo" alt="Logo nossa escola tem parceria com a SMED Pelotas. A prefeitura de Pelotas colabora desde 2023 na manutenção de 107 vagas com um total de R$ 665.267,40 anuais. Balor utilizado para pagamento ds salários dos proficionais da EEIDAZ">
+            </div>
+        </div>
+        <div class="contato">
+                <p><b>Contato:</b>  eeidomantoniozattera@gmail.com</p>
+        </div>
+        <!--Rodapé-->
+        <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <!--Coluna Contatos--> 
+                <div class="col-md-3">
+                    <h5>Instituto de Menores Dom Antônio Zattera</h5>
+                    <p><b>Email:</b> institutodemenores@gmail.com</p>
+                    <p><b>Telefone:</b> (53) 3228 5505</p>
+                    <p><b>WhatsApp:</b> +5553999030409</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6765835368847!2d-52.305627725158715!3d-31.752027674108707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b45b607428c9%3A0xbe78d18a4a36d8c!2sInstituto%20de%20Menores%20Dom%20Ant%C3%B4nio%20Zattera!5e0!3m2!1spt-BR!2sbr!4v1727399696293!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--Coluna Sobre Nós-->
+                <div class="col-md-3">
+                    <h5>Sobre Nós</h5>
+                    <p>O Instituto de Menores tem como objetivo promover a humanização e evangelização executadas através da educação e a busca da profissionalização, além de promover a oportunidade de convivência sadia e fraterna, através do lazer, esporte e atividades culturais que exercitam a cidadania, bem como apoio as ações do ensino formal, valorização do estudo e do trabalho.</p>
+                </div>
+                <!--Coluna Seções-->
+                <div class="col-md-3">
+                    <h5>Publicações mais populares</h5>
+                    <ul>
+                        <li><a href="#">Postagem 1</a></li>
+                        <li><a href="#">Postagem 2</a></li>
+                    </ul>
+                </div>
+                <!--Coluna de TAG's-->
+                <div class="col-md-3">
+                    <h5>Tags</h5>
+                    <ul>
+                        <li><a href="#">Ações Realizadas</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Calendário</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Copyright e Redes Sociais--> 
+            <div class="text-center copyright">
+                <p>&copy; 2024 Instituto de Menores Dom Antônio Zattera. Todos os direitos reservados.<br> 
+                <b>Site Desenvolvido por:</b><i> Anderson Moreira Passos</i></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/institutodemenoresdaz/" class="social-icon"><img src="icones/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/imdaz.1924/" class="social-icon"><img src="icones/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@imdaz158" class="social-icon"><img src="icones/youtube-icon.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    
+        <!--Bootstrap para Responsividade-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            window.onscroll = function () {
+                toggleCompactNavbar();
+            };
+        
+            const compactNavbar = document.querySelector('.compact-navbar');
+            const navbar = document.querySelector('.navbar');
+            const expandMenuButton = document.querySelector('.compact-navbar .navbar-toggler');
+            const compactMenu = document.getElementById('compactMenu');
+        
+            function toggleCompactNavbar() {
+                if (window.scrollY > 50) {
+                    compactNavbar.style.display = 'flex';
+                    navbar.style.display = 'none';
+                } else {
+                    compactNavbar.style.display = 'none';
+                    navbar.style.display = 'flex';
+                }
+            }
+        
+            expandMenuButton.addEventListener('click', function () {
+                compactMenu.classList.toggle('collapse');
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    Infinity: true,
+                    speed: 500,
+                    arrows: true,
+                    dots: true,
+                    responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                }
+              ]
+            });
+        });
+        </script>
+    </body>
+</html>
